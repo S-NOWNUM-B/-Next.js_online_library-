@@ -1,0 +1,49 @@
+/* Сброс и базовая стилизация */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background-color: aqua;
+    color: black;
+}
+
+/* Общий контейнер для layout */
+.layout {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Основной контент */
+main {
+    flex: 1;
+    padding: 0; /* Убрали отступ сверху/снизу */
+    margin: 0;
+}
+
+/* Обнуляем отступы у section, особенно hero */
+section {
+    margin: 0;
+    padding: 0;
+}
+
+/* Убираем возможные отступы у заголовков */
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    overflow-y: scroll;
+}
+
+section {
+    margin-bottom: 4rem;
+}

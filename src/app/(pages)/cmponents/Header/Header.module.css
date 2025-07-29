@@ -1,0 +1,61 @@
+.headerWrapper {
+    background-color: white;
+    padding: 1rem 0;
+    border-bottom: 1px solid #ffffff;
+}
+
+.headerContent {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+    padding: 0 2rem;
+}
+
+/* Левая часть — логотип */
+.logoSection {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #222;
+    text-decoration: none;
+    justify-self: start;
+}
+
+/* Центральное меню */
+.navLinks {
+    display: flex;
+    gap: 2rem;
+    font-size: 1rem;
+    font-weight: 500;
+    justify-self: center;
+}
+
+.navLinks a {
+    color: #333;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.navLinks a:hover {
+    color: aqua;
+}
+
+/* Правая часть — профиль */
+.profileLink {
+    justify-self: end;
+}
+
+.profileLink a {
+    color: #333;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.2s;
+}
+
+.profileLink a:hover {
+    color: aqua;
+}
