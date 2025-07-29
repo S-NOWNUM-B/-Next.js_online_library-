@@ -279,6 +279,18 @@
         margin: 1rem;
         padding: 3rem 1rem;
     }
+
+    .libraryTitle {
+        font-size: 1.8rem;
+    }
+
+    .book-content h3 {
+        font-size: 1.2rem;
+    }
+
+    .book-content p {
+        font-size: 0.95rem;
+    }
 }
 
 @media (max-width: 480px) {
@@ -291,7 +303,8 @@
     }
 
     .picks-grid,
-    .why-us-grid {
+    .why-us-grid,
+    .grid {
         grid-template-columns: 1fr;
     }
 }

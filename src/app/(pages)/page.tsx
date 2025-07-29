@@ -1,5 +1,6 @@
 import "../styles/home.css";
 import Image from "next/image";
+import WeeklyPicks from './cmponents/WeeklyPicks/WeeklyPicks';
 
 export default function Home() {
     return (
@@ -22,85 +23,8 @@ export default function Home() {
                 </div>
             </section>
 
-
             {/* Рекомендации недели */}
-            <section className="weekly-picks">
-                <h2>Книги недели</h2>
-                <div className="picks-grid">
-                    {[
-                        {
-                            title: "Атомные привычки",
-                            author: "Джеймс Клир",
-                            image: "/img/book_1.jpg"
-                        },
-                        {
-                            title: "Психология влияния",
-                            author: "Роберт Чалдини",
-                            image: "/img/book_2.jpg"
-                        },
-                        {
-                            title: "Величайший торговец в мире",
-                            author: "Ог Мандино",
-                            image: "/img/book_3.jpg"
-                        },
-                        {
-                            title: "Атомные привычки",
-                            author: "Джеймс Клир",
-                            image: "/img/book_1.jpg"
-                        },
-                        {
-                            title: "Психология влияния",
-                            author: "Роберт Чалдини",
-                            image: "/img/book_2.jpg"
-                        },
-                        {
-                            title: "Величайший торговец в мире",
-                            author: "Ог Мандино",
-                            image: "/img/book_3.jpg"
-                        },
-                        {
-                            title: "Атомные привычки",
-                            author: "Джеймс Клир",
-                            image: "/img/book_1.jpg"
-                        },
-                        {
-                            title: "Психология влияния",
-                            author: "Роберт Чалдини",
-                            image: "/img/book_2.jpg"
-                        },
-                        {
-                            title: "Величайший торговец в мире",
-                            author: "Ог Мандино",
-                            image: "/img/book_3.jpg"
-                        },
-                        {
-                            title: "Атомные привычки",
-                            author: "Джеймс Клир",
-                            image: "/img/book_1.jpg"
-                        },
-                        {
-                            title: "Психология влияния",
-                            author: "Роберт Чалдини",
-                            image: "/img/book_2.jpg"
-                        },
-                        {
-                            title: "Величайший торговец в мире",
-                            author: "Ог Мандино",
-                            image: "/img/book_3.jpg"
-                        },
-                    ].map((book, index) => (
-                        <div className="pick-card" key={index}>
-                            <div className="pick-image-wrapper">
-                                <img src={book.image} alt={book.title} />
-                            </div>
-                            <div className="pick-content">
-                                <h3>{book.title}</h3>
-                                <p>Автор: {book.author}</p>
-                            </div>
-                        </div>
-                    ))}
-                </div>
-            </section>
+            <WeeklyPicks />
 
             {/* Особенность библиотеки */}
             <section className="why-us">

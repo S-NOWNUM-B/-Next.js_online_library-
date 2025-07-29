@@ -8,7 +8,7 @@ export default function Header() {
             <div className={styles.headerContent}>
                 <Link href="/" className={styles.logoSection}>
                     <Image
-                        src="/logo.png"
+                        src="/logo/logo.png"
                         alt="Логотип библиотеки"
                         width={32}
                         height={32}
@@ -17,7 +17,7 @@ export default function Header() {
                 </Link>
 
                 <nav className={styles.navLinks}>
-                    <Link href="/story">Библиотека</Link>
+                    <Link href="/library">Библиотека</Link>
                     <Link href="/authors">Авторы</Link>
                     <Link href="/about">О нас</Link>
                 </nav>

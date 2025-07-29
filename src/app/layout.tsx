@@ -1,4 +1,6 @@
 import './styles/global.css';
+import './styles/home.css';
+import './styles/library.css';
 
 import Header from './(pages)/cmponents/Header/Header';
 import Footer from './(pages)/cmponents/Footer/Footer';
